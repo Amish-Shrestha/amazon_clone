@@ -1,0 +1,25 @@
+.home {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home__image {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.3), rgba(0, 0, 0, 0));
+  object-fit: cover;
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .home__row {
+    margin: 0 -5px;
+  }
+}
